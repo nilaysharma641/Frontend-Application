@@ -2,7 +2,7 @@ import './App.scss'
 import { useSelector, useDispatch } from 'react-redux'
 import { getConfiguration } from './store/actions/configuration'
 import React, { useEffect } from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import Loader from './components/Loader'
 import SideNav from './components/SideNav'
 import Landing from './components/Landing'
@@ -29,7 +29,7 @@ function App() {
 		<div className='app'>
 			{isLoading && <Loader />}
 			{configuration && (
-				<BrowserRouter>
+				<HashRouter>
 					<div className='header-wrapper'>
 						<Header />
 					</div>
@@ -42,7 +42,7 @@ function App() {
 							</Switch>
 						</div>
 					</div>
-				</BrowserRouter>
+				</HashRouter>
 			)}
 			{error && <h1>Something went wrong..</h1>}
 		</div>
