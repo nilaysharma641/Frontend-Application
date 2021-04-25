@@ -1,0 +1,29 @@
+.sidenav {
+	background-color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 15%;
+	a.sidenav-links-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 10px 0;
+		width: 100%;
+		text-decoration: none;
+		color: var(--main-color);
+		cursor: pointer;
+		&:hover,
+		&:active {
+			background-color: #e4e4e4;
+			text-decoration: none;
+		}
+		.sidenav-icons {
+			margin: 0 10px;
+		}
+	}
+
+	@media screen and (max-width: 860px) {
+		display: none;
+	}
+}

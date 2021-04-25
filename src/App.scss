@@ -1,0 +1,57 @@
+:root {
+	--main-color: #272e71;
+	--secondary-color: #ffffff;
+}
+body,
+html,
+#root {
+	margin: 0;
+	height: 100%;
+}
+
+.app {
+	height: 100%;
+	.header-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.body-wrapper {
+		position: relative;
+		display: flex;
+		min-height: 100%;
+		background: var(--main-color);
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(2, 0, 36, 1) 39%,
+			rgba(39, 46, 113, 1) 100%,
+			rgba(0, 212, 255, 1) 100%
+		);
+	}
+	.content-wrapper {
+		width: 85%;
+		min-height: 100%;
+	}
+
+	@media screen and (max-width: 940px) {
+		.content-wrapper {
+			width: 100%;
+		}
+	}
+}
+
+.card {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.d-flex {
+	display: flex;
+}
+
+@import './assets/scss/loader';
+@import './assets/scss/header';
+@import './assets/scss/sidenav';
+@import './assets/scss/landing.scss';
+@import './assets/scss/product';

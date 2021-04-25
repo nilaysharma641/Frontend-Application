@@ -1,0 +1,55 @@
+.landing-wrapper {
+	min-height: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.landing-jumbotron {
+		width: 60%;
+		.landing-title {
+			font-size: 54px;
+		}
+
+		.animated-subheading {
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 29px;
+			.animated-target {
+				margin-left: 5px;
+			}
+		}
+
+		.start-now-button {
+			font-size: 16px;
+			margin: 40px 0;
+			padding: 10px;
+			background: transparent;
+			color: #3ab396;
+			cursor: pointer;
+			padding: 8px 15px;
+			transition: all 0.3s ease-in-out;
+			border-radius: 4px;
+			display: flex;
+			border: 1px solid #3ab396;
+			.start-now-icon {
+				padding: 0 10px;
+				align-self: center;
+			}
+			&:hover,
+			&:active,
+			&:visited,
+			&:focus {
+				background-color: #3ab396;
+				color: #273e71;
+			}
+		}
+	}
+
+	@media screen and (max-width: 940px) {
+		align-items: center;
+		.landing-jumbotron {
+			width: 95%;
+		}
+	}
+}
