@@ -40,7 +40,10 @@ export const updateProducts = (product) => (dispatch) => {
 
 export const getTrls = (dispatch) => {
 	dispatch({ type: 'SET_PRODUCT_LOADING' })
-	fetch(`${process.env.REACT_APP_API_URL}/trl`)
+	fetch(`${process.env.REACT_APP_API_URL}/trl/`, {
+		method: 'GET',
+		headers: {}
+	})
 		.then((res) => res.json())
 		.then((data) => {
 			return dispatch({
