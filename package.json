@@ -2,7 +2,6 @@
 	"name": "frontend-application",
 	"version": "0.1.0",
 	"private": true,
-	"proxy": "https://api-test.innoloft.com",
 	"dependencies": {
 		"@react-google-maps/api": "^2.1.1",
 		"@reduxjs/toolkit": "^1.5.1",
