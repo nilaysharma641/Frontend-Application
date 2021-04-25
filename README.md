@@ -19,4 +19,5 @@
   - [x] User company name
 - [x] Map (Displays company address)
 - [x] White-Labeling
+- [x] WYSIWYG methodology
 - [x] API
